@@ -1,0 +1,453 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+MainWrap{
+    float:left;
+    width:1050px;
+}
+a{text-decoration: none;}
+	
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+aside{
+    float: left;
+    width: 150px;
+    background-color: #30363e;
+    height:800px;
+}
+
+aside .nav{
+    float:left;
+    padding:0;
+
+}
+aside .nav li {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+    text-align:center;
+   
+}
+aside .nav li a{
+    height: 32px;
+    width: 150px;
+    display:block;
+    margin-top: 10px;
+    padding-top: 7px;
+    color: #ffffff;
+}
+
+aside  .nav  li a.Active{
+	background-color: #ffb3a3;
+}
+aside  .nav  li a:hover{
+    background-color: #f19682;
+    color: #30363e;
+}
+aside  .nav  li a{
+        font-size: 20px;
+}
+.TopBar{
+    display: block;
+    width:100%;
+    height:150px;
+    margin: 0 0 40px 0;
+    padding-top :10px;
+    background-color: #ffb3a3;
+}
+
+.ActivePAtientTopBar{
+    float:left;
+}
+.ActivePatientTopBarSearch{
+    width: 250px;
+    float:left;
+    margin: 0 30px 0 20px;
+}
+.ActivePatientTopBarSearch input{
+      width: 250px;
+      margin-bottom:10px;
+      height: 30px;
+}
+.ActivePatientTopBarSearch input[type=submit]{
+    background-color: #30363e;
+    color: #ffffff;
+    border: none;
+    width: 253px;
+    height: 32px;
+}
+
+.myForm .myText{
+    width:100%;
+    float:left;
+    height:30px;
+    margin-bottom:10px;
+}
+.myForm .mybutton{
+    width:100%;
+    float:left;
+    height:30px;
+    background:#5f9be3;
+}
+.myForm .mybutton:hover{
+     background: #d4e5f9;
+}
+.bttomLink{
+    float: left;
+    width: 600px;
+}
+.bttomLink a{
+    color: #000000;
+    background-color: #82b5c0;
+}
+
+.topLink   a{
+	color: #737069;
+    font-size: 20px;
+}
+.topLink   a:hover{
+    background-color: #d4e5f9;
+}
+
+.ActivePAtientTopBar dl {
+    margin: 0;
+    float:left;
+}
+.ActivePAtientTopBar dl dt {
+    background:#ffffff;
+    color: #30363e;
+    float:left;
+    font-weight:bold;
+    width:150px;
+    margin:0 15px 10px 0;
+    padding :5px 0;
+    text-align:center;
+    height: 15px;
+}
+.ActivePAtientTopBar dl dd {
+    width: 600px;
+    height: 15px;
+    padding :5px 0;
+    margin:0 15px 10px 0;
+    color: #000000;
+    background-color: #82b5c0;
+}
+
+dl {
+    margin: 0;
+    float:left;
+}
+dl dt {
+    background:#ffb3a3;
+    color: #30363e;
+    float:left;
+    font-weight:bold;
+    width:150px;
+    margin:0 15px 10px 0;
+    padding :5px 0;
+    text-align:center;
+    height: 15px;
+}
+dl dd {
+    width: 1000px;
+    height: 15px;
+    padding :5px 0;
+    margin:0 15px 10px 0;
+    color: #000000;
+    background-color: #82b5c0;
+}
+.max{
+    max-width:1050px;
+}
+.form-group{
+    float:left;
+    width:80%;
+    display:block;
+    margin-bottom: 20px;
+}
+.form-group label{
+     float:left;
+     width:200px;
+}
+.form-group p{
+     float:left;
+     width:200px;
+     margin:0;
+}
+.form-group input{
+         float:left;
+         width:180px;
+}
+.form-group select{
+         float:left;
+         width:180px;
+}
+.col-md-offset-2{
+    margin-left:200px;
+}
+.col-md-10{
+        float:left;
+}
+.form-horizontal{
+    float:left;
+    width:80%;
+    margin-left:20px;
+}
+
+table#TreatmentList {
+    width:100%;
+    display:block;
+}
+table#TreatmentList  thead{
+    background-color: #d4e5f9;
+    width:100%;
+    display:block;
+}
+
+table#TreatmentList  a:active   {
+	background-color: #d4e5f9;
+}
+table#TreatmentList  a:hover   {
+	background-color: #d4e5f9;
+}
+table#TreatmentList    a{
+	color: #737069;
+    font-size: 20px;
+}
+table#TreatmentList  th{
+    height: 20px;
+    padding-top: 5px;
+    min-width:100px;
+    border-right: solid 1px #30363e;
+    border-left: solid 1px #30363e;
+}
+
+table#TreatmentList  td{
+    height: 20px;
+    padding-top: 5px;
+    min-width:100px;
+    text-align:center;
+    border: solid 1px #30363e;
+
+}
+table#TreatmentList td.treatmentTableSmall{
+    width:30px !important; 
+}
+
+
+#container{
+    float:left;
+    margin-bottom: 20px;
+
+}
+#TreatmentListWrap{
+    float:left;
+    width:1000px;
+}
+#TreatmentListWrap  .Treatmentheader{
+    width:50px;
+}
+#TreatmentListWrap  input{
+    width:80px;
+}
+#TreatmentListWrap  input[type=button]{
+    width:70px;
+}
+
+#TreatmentListWrap  label{
+    width:100px;
+}
+#TreatmentList{
+
+}
+#MatrailHolder{
+    float:left;
+
+}
+#OpperationForm{
+    float:left;
+    height:900px;
+    width: 150px;
+    margin-left:10px;
+}
+#OpperationForm input{
+    margin-bottom:10px;
+}
+#btnSaveTreatments{
+    float:left;
+    
+}
+.red{
+    background-color:red;
+}
+
+
+.PagerHolder  { text-align:left; border-top: 2px solid silver;padding: .5em 0 0 0; margin-top: 1em; }
+.PagerHolder  A { font-size: 1.1em; color: #666; text-decoration: none;padding: 0 .4em 0 .4em; }
+.PagerHolder  A:hover { background-color: Silver; }
+.PagerHolder  A.selected { background-color: #353535; color: White; }
+
+#PrescPrint{
+    text-align:center;
+        width:80%;
+   display:block;
+   	font-family: 'Droid Arabic Kufi', serif;
+
+}
+
+#PrescPrint #prescHead{
+    width:80%;
+   display:block;
+    float:right;
+}
+#PrescPrint #prescHead h1{
+    font-size:40px;
+}
+#PrescPrint #prescHead h2{
+    font-size:30px;
+}
+#PrescPrint #prescPatientInfo{
+     width:80%;
+     display:block;
+     float:right;
+}
+
+#PrescPrint #prescPatientInfo .presInfo{
+   width:100%;
+   display:block;
+   float:right;
+}
+#PrescPrint #prescPatientInfo .presInfo p{
+    float:right;
+    margin-left:30px;
+    width:70%;
+    background-color:#f1f1f1;
+}
+#PrescPrint #prescPatientInfo .presInfo p.prescInfoTitle{
+    width:100px;
+}
+
+#PrescPrint #prescContant{
+     width:80%;
+     display:block;
+    float:right;
+}
+#PrescPrint #prescContant li{
+    float:left;
+    width:80%;
+    background-color:#d4e5f9;
+    margin-bottom:10px;
+}
+#PrescPrint #prescContant li p{
+    display:inline-block;
+     float:left;
+     margin-right:20px;
+}
+
+
+#PrescPrint #prescFooter{
+     width:80%;
+     display:block;
+     float:right;
+}
+
+@media print {
+   .noPrint{
+        display:none;
+   }
+    .nav{
+       display:none;
+   }
+
+   .TopBar{
+       display:none;
+   }
+
+   .bttomLink{
+             display:none;
+   
+   }
+  .preview-area-messages{
+        display:none;
+   }
+
+#PrescPrint{
+        width:100%;
+        margin-top:0px;
+}
+
+#PrescPrint #prescHead{
+    width:100%;
+
+}
+#PrescPrint #prescHead hr{
+    width:50%;
+}
+#PrescPrint #prescPatientInfo{
+    width:100%;
+}
+
+#PrescPrint #prescContant{
+     width:100%;
+}
+#PrescPrint #prescContant li{
+    width:100%;
+}
+#PrescPrint #prescFooter{
+     width:100%;
+}
+#PrescPrint #prescFooter .footerLine{
+    width:50%;
+    color:silver;
+}
+
+#PrescPrint #prescFooter{
+   position:fixed;
+   bottom:0px;
+   height:180px;
+   width:100%;
+   left:60px;
+}
+   
+}

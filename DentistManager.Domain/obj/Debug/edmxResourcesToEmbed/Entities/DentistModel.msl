@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DentistModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.C__MigrationHistory)">
+        <MappingFragment StoreEntitySet="C__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Appointment)">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Start_date" ColumnName="Start_date" />
+          <ScalarProperty Name="End_date" ColumnName="End_date" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.AspNetRole)">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.AspNetUserClaim)">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.AspNetUserLogin)">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.AspNetUser)">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clinics">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Clinic)">
+        <MappingFragment StoreEntitySet="Clinics">
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Acitve" ColumnName="Acitve" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomMaterials">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.CustomMaterial)">
+        <MappingFragment StoreEntitySet="CustomMaterials">
+          <ScalarProperty Name="CustomMaterialID" ColumnName="CustomMaterialID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="ReciveDate" ColumnName="ReciveDate" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="Payed" ColumnName="Payed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Doctor)">
+        <MappingFragment StoreEntitySet="Doctors">
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="BrithDate" ColumnName="BrithDate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageCategories">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.ImageCategory)">
+        <MappingFragment StoreEntitySet="ImageCategories">
+          <ScalarProperty Name="ImageCategoryID" ColumnName="ImageCategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Images">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Image)">
+        <MappingFragment StoreEntitySet="Images">
+          <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Notice" ColumnName="Notice" />
+          <ScalarProperty Name="appointmentID" ColumnName="appointmentID" />
+          <ScalarProperty Name="ImageCategoryID" ColumnName="ImageCategoryID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="FullImageURL" ColumnName="FullImageURL" />
+          <ScalarProperty Name="MediumImageURL" ColumnName="MediumImageURL" />
+          <ScalarProperty Name="MinImageURL" ColumnName="MinImageURL" />
+          <ScalarProperty Name="LocalImageURL" ColumnName="LocalImageURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Material)">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="PartNumber" ColumnName="PartNumber" />
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+          <ScalarProperty Name="ProdCompany" ColumnName="ProdCompany" />
+          <ScalarProperty Name="ScaleType" ColumnName="ScaleType" />
+          <ScalarProperty Name="ReOrder" ColumnName="ReOrder" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="MaterialCost" ColumnName="MaterialCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialTreatments">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.MaterialTreatment)">
+        <MappingFragment StoreEntitySet="MaterialTreatments">
+          <ScalarProperty Name="TeratmentID" ColumnName="TeratmentID" />
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="MaterialCost" ColumnName="MaterialCost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Medicine)">
+        <MappingFragment StoreEntitySet="Medicines">
+          <ScalarProperty Name="MedicineID" ColumnName="MedicineID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SideEffectDecsription" ColumnName="SideEffectDecsription" />
+          <ScalarProperty Name="ScaleType" ColumnName="ScaleType" />
+          <ScalarProperty Name="Dose" ColumnName="Dose" />
+          <ScalarProperty Name="Concentration" ColumnName="Concentration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="opperations">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.opperation)">
+        <MappingFragment StoreEntitySet="opperations">
+          <ScalarProperty Name="OpperationID" ColumnName="OpperationID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpperationMaterials">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.OpperationMaterial)">
+        <MappingFragment StoreEntitySet="OpperationMaterials">
+          <ScalarProperty Name="OpperationID" ColumnName="OpperationID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientHistories">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.PatientHistory)">
+        <MappingFragment StoreEntitySet="PatientHistories">
+          <ScalarProperty Name="HistoryID" ColumnName="HistoryID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Descripation" ColumnName="Descripation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Patient)">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="BrithDate" ColumnName="BrithDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Notice" ColumnName="Notice" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentReceipts">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.PaymentReceipt)">
+        <MappingFragment StoreEntitySet="PaymentReceipts">
+          <ScalarProperty Name="ReceiptID" ColumnName="ReceiptID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prescriptions">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Prescription)">
+        <MappingFragment StoreEntitySet="Prescriptions">
+          <ScalarProperty Name="PrescriptionID" ColumnName="PrescriptionID" />
+          <ScalarProperty Name="Notice" ColumnName="Notice" />
+          <ScalarProperty Name="MedicineID" ColumnName="MedicineID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="Dose" ColumnName="Dose" />
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecivingItems">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.RecivingItem)">
+        <MappingFragment StoreEntitySet="RecivingItems">
+          <ScalarProperty Name="ReciveID" ColumnName="ReciveID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="SuppID" ColumnName="SuppID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="ReciveDate" ColumnName="ReciveDate" />
+          <ScalarProperty Name="StorageID" ColumnName="StorageID" />
+          <ScalarProperty Name="Recived" ColumnName="Recived" />
+          <ScalarProperty Name="ByoneCost" ColumnName="ByoneCost" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Secretaries">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Secretary)">
+        <MappingFragment StoreEntitySet="Secretaries">
+          <ScalarProperty Name="SecretaryID" ColumnName="SecretaryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="BrithDate" ColumnName="BrithDate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionsStats">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.SessionsStat)">
+        <MappingFragment StoreEntitySet="SessionsStats">
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionValues">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.SessionValue)">
+        <MappingFragment StoreEntitySet="SessionValues">
+          <ScalarProperty Name="ValueID" ColumnName="ValueID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="SessionValue1" ColumnName="SessionValue1" />
+          <ScalarProperty Name="PrortyName" ColumnName="PrortyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Storages">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Storage)">
+        <MappingFragment StoreEntitySet="Storages">
+          <ScalarProperty Name="StorageID" ColumnName="StorageID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suppcontacts">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.suppcontact)">
+        <MappingFragment StoreEntitySet="suppcontacts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SuppId" ColumnName="SuppId" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactTitel" ColumnName="ContactTitel" />
+          <ScalarProperty Name="ContactDep" ColumnName="ContactDep" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suppliers">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.supplier)">
+        <MappingFragment StoreEntitySet="suppliers">
+          <ScalarProperty Name="SuppID" ColumnName="SuppID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Countery" ColumnName="Countery" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="TaxFileNo" ColumnName="TaxFileNo" />
+          <ScalarProperty Name="TaxCommision" ColumnName="TaxCommision" />
+          <ScalarProperty Name="TaxRegNo" ColumnName="TaxRegNo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="openbalance" ColumnName="openbalance" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Treatments">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Treatment)">
+        <MappingFragment StoreEntitySet="Treatments">
+          <ScalarProperty Name="TeratmentID" ColumnName="TeratmentID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="OpperationID" ColumnName="OpperationID" />
+          <ScalarProperty Name="ToothSideNumber" ColumnName="ToothSideNumber" />
+          <ScalarProperty Name="ToothNumber" ColumnName="ToothNumber" />
+          <ScalarProperty Name="OpperationCost" ColumnName="OpperationCost" />
+          <ScalarProperty Name="TeratmentCost" ColumnName="TeratmentCost" />
+          <ScalarProperty Name="ClinicID" ColumnName="ClinicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warehouses">
+      <EntityTypeMapping TypeName="IsTypeOf(DentistModel.Warehouse)">
+        <MappingFragment StoreEntitySet="Warehouses">
+          <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+          <ScalarProperty Name="StorageID" ColumnName="StorageID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="Reserved" ColumnName="Reserved" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DentistModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="AspNetRoles_Id" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="AspNetUsers_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MedicinePrescription" TypeName="DentistModel.MedicinePrescription" StoreEntitySet="MedicinePrescription">
+      <EndProperty Name="Medicine">
+        <ScalarProperty Name="MedicineID" ColumnName="Medicines_MedicineID" />
+      </EndProperty>
+      <EndProperty Name="Prescriptions">
+        <ScalarProperty Name="PrescriptionID" ColumnName="Prescriptions1_PrescriptionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

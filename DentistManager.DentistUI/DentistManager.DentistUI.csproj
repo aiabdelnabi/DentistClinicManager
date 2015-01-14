@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70986276-62F2-497B-824E-B234640BDFE1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DentistManager.DentistUI</RootNamespace>
+    <AssemblyName>DentistManager.DentistUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Data.v13.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.v13.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraScheduler.v13.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DHTMLX">
+      <HintPath>..\packages\DHTMLX.Scheduler.NET.3.0.1.11\lib\DHTMLX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts.aspx.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts.aspx.designer.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Clinics.aspx.cs">
+      <DependentUpon>Clinics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Clinics.aspx.designer.cs">
+      <DependentUpon>Clinics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Doctors.aspx.cs">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Doctors.aspx.designer.cs">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Materials.aspx.cs">
+      <DependentUpon>Materials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Materials.aspx.designer.cs">
+      <DependentUpon>Materials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Medicine.aspx.cs">
+      <DependentUpon>Medicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Medicine.aspx.designer.cs">
+      <DependentUpon>Medicine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\opperation.aspx.cs">
+      <DependentUpon>opperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\opperation.aspx.designer.cs">
+      <DependentUpon>opperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PatientStatus.aspx.cs">
+      <DependentUpon>PatientStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PatientStatus.aspx.designer.cs">
+      <DependentUpon>PatientStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PaymentByPeriod.aspx.cs">
+      <DependentUpon>PaymentByPeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PaymentByPeriod.aspx.designer.cs">
+      <DependentUpon>PaymentByPeriod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Receiving.aspx.cs">
+      <DependentUpon>Receiving.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Receiving.aspx.designer.cs">
+      <DependentUpon>Receiving.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Secretary.aspx.cs">
+      <DependentUpon>Secretary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Secretary.aspx.designer.cs">
+      <DependentUpon>Secretary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Storages.aspx.cs">
+      <DependentUpon>Storages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Storages.aspx.designer.cs">
+      <DependentUpon>Storages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SuperAdmin.aspx.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\SuperAdmin.aspx.designer.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Suppliers.aspx.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Suppliers.aspx.designer.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Warehouse.aspx.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Warehouse.aspx.designer.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\Appoiment.aspx.cs">
+      <DependentUpon>Appoiment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\Appoiment.aspx.designer.cs">
+      <DependentUpon>Appoiment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\Appoiments.aspx.cs">
+      <DependentUpon>Appoiments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\Appoiments.aspx.designer.cs">
+      <DependentUpon>Appoiments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\SecretaryMaster.Master.cs">
+      <DependentUpon>SecretaryMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\SecretaryMaster.Master.designer.cs">
+      <DependentUpon>SecretaryMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\UserAppoiment\UserAppForm.ascx.cs">
+      <DependentUpon>UserAppForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\UserAppoiment\UserAppForm.ascx.designer.cs">
+      <DependentUpon>UserAppForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\CustomMatrialController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientIllnessHistoryController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientImagesController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientManagementController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientPaymentController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientPaymentReceiptController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientSearchController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PatientStatusController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\PrescriptionController.cs" />
+    <Compile Include="Areas\DoctorDashboard\Controllers\TreatmentSessionController.cs" />
+    <Compile Include="Areas\DoctorDashboard\DoctorDashboardAreaRegistration.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientIllnessHistoryController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientImagesController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientManagementController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientPaymentController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientPaymentReceiptController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientSearchController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\Controllers\PatientStatusController.cs" />
+    <Compile Include="Areas\SecretaryDashboard\SecretaryDashboardAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CalendarController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatientAppController.cs" />
+    <Compile Include="core\security.cs" />
+    <Compile Include="DependencyResolution\IoC.cs" />
+    <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
+    <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentDragToolTip.ascx.cs">
+      <DependentUpon>AppointmentDragToolTip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentDragToolTip.ascx.designer.cs">
+      <DependentUpon>AppointmentDragToolTip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.cs">
+      <DependentUpon>AppointmentForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.designer.cs">
+      <DependentUpon>AppointmentForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.cs">
+      <DependentUpon>AppointmentFormEx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.designer.cs">
+      <DependentUpon>AppointmentFormEx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentToolTip.ascx.cs">
+      <DependentUpon>AppointmentToolTip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentToolTip.ascx.designer.cs">
+      <DependentUpon>AppointmentToolTip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.cs">
+      <DependentUpon>GotoDateForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.designer.cs">
+      <DependentUpon>GotoDateForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.cs">
+      <DependentUpon>HorizontalAppointmentTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>HorizontalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.cs">
+      <DependentUpon>HorizontalSameDayAppointmentTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>HorizontalSameDayAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.cs">
+      <DependentUpon>InplaceEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.designer.cs">
+      <DependentUpon>InplaceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.cs">
+      <DependentUpon>RecurrentAppointmentDeleteForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.designer.cs">
+      <DependentUpon>RecurrentAppointmentDeleteForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.cs">
+      <DependentUpon>RecurrentAppointmentEditForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.designer.cs">
+      <DependentUpon>RecurrentAppointmentEditForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\ReminderForm.ascx.cs">
+      <DependentUpon>ReminderForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\ReminderForm.ascx.designer.cs">
+      <DependentUpon>ReminderForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\SelectionToolTip.ascx.cs">
+      <DependentUpon>SelectionToolTip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\SelectionToolTip.ascx.designer.cs">
+      <DependentUpon>SelectionToolTip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.cs">
+      <DependentUpon>VerticalAppointmentTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appoiment\DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>VerticalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlHelpers\GenerateDropDownListHelpers.cs" />
+    <Compile Include="Infrastructure\ImagesDrawing.cs" />
+    <Compile Include="Infrastructure\ISessionStateManger.cs" />
+    <Compile Include="Infrastructure\SessionStateManger.cs" />
+    <Compile Include="Infrastructure\Structures.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\UserManager.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Admin\Accounts.aspx" />
+    <Content Include="Admin\Clinics.aspx" />
+    <Content Include="Admin\Doctors.aspx" />
+    <Content Include="Admin\Materials.aspx" />
+    <Content Include="Admin\Medicine.aspx" />
+    <Content Include="Admin\opperation.aspx" />
+    <Content Include="Admin\PatientStatus.aspx" />
+    <Content Include="Admin\Payment.aspx" />
+    <Content Include="Admin\PaymentByPeriod.aspx" />
+    <Content Include="Admin\Receiving.aspx" />
+    <Content Include="Admin\Secretary.aspx" />
+    <Content Include="Admin\Storages.aspx" />
+    <Content Include="Account\SuperAdmin.aspx" />
+    <Content Include="Admin\Suppliers.aspx" />
+    <Content Include="Admin\Warehouse.aspx" />
+    <Content Include="Appoiment\Appoiment.aspx" />
+    <Content Include="Appoiment\Appoiments.aspx" />
+    <Content Include="Appoiment\UserAppoiment\UserAppForm.ascx" />
+    <Content Include="Appoiment\WebForm1.aspx" />
+    <Content Include="App_Data\SideMenu.xml" />
+    <Content Include="Content\Admin.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\styleRest.css" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentDragToolTip.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentForm.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\AppointmentToolTip.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\GotoDateForm.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\InplaceEditor.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\ReminderForm.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\SelectionToolTip.ascx" />
+    <Content Include="Appoiment\DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx" />
+    <Content Include="dhxscheduler.sample.mvc3.readme.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\SecretaryDashboard\Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_classic.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_custom_lightbox.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_glossy.css" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_live_updates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\buttons.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\controls.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\images.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\buttons.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_big.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_small.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\controlls5.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\event-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-separator.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-time-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\lightbox.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\move.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-separator.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ar.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ca.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_he.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_hu.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_id.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_jp.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_no.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_recurring_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_si.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_tr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_classic.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_custom_lightbox.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\dhtmlxscheduler_glossy.css" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_live_updates.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\buttons.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\controls.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\images.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\blue_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\buttons.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\clock_big.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\clock_small.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\controlls5.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\event-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\left-separator.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\left-time-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\lightbox.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\move.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\top-separator.gif" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\white_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ar.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ca.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_he.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_hu.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_id.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_jp.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_no.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_recurring_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_si.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_tr.js" />
+    <Content Include="Scripts\dhtmlxScheduler_debug\locale\locale_ua.js" />
+    <Content Include="Scripts\DoctorDashboard\PrescriptionAdd.js" />
+    <Content Include="Scripts\DoctorDashboard\TreatmentSession.js" />
+    <Content Include="Scripts\kinetic.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Areas\SecretaryDashboard\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\Index.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\PatientDetails.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\patientList.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\PatientCreate.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\PatientDelete.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientManagement\PatientEdit.cshtml" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientSearch\ActivePatientTopBar.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientSearch\PatientSearchInfo.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientImages\patientImagesList.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientImages\PatientImagesDetails.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientImages\PatientImagesCreate.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientImages\PatientImagesEdit.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientImages\PatientImagesDelete.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientIllnessHistory\patientHistoryList.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientIllnessHistory\PatientHistoryDetails.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientIllnessHistory\PatientHistoryCreate.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientIllnessHistory\PatientHistoryEdit.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientIllnessHistory\PatientHistoryDelete.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\Shared\NoActivePatientView.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientSearch\ActivePatientTopBarSearch.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientSearch\PatientAdvancedSearch.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientSearch\PatientAdvancedSearchForm.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\web.config" />
+    <Content Include="Areas\DoctorDashboard\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\TreatmentSession\opperationList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\TreatmentSession\TreatmentSessionMain.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientSearch\ActivePatientTopBar.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientSearch\ActivePatientTopBarSearch.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientSearch\PatientAdvancedSearch.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientSearch\PatientAdvancedSearchForm.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientSearch\PatientSearchInfo.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientManagement\patientList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientManagement\PatientDetails.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientIllnessHistory\PatientHistoryCreate.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientIllnessHistory\PatientHistoryDelete.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientIllnessHistory\PatientHistoryDetails.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientIllnessHistory\PatientHistoryEdit.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientIllnessHistory\patientHistoryList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Shared\NoActivePatientView.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Prescription\PrescriptionList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Prescription\PrescriptionDetails.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientPaymentReceipt\patientReceiptList.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientPaymentReceipt\patientReceiptDetails.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientPaymentReceipt\patientReceiptCreate.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientPaymentReceipt\patientReceiptDelete.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\customMatrialList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\customMatrialdetails.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\customMatrialEdit.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\customMatrialDelete.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\customMatrialCreate.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Prescription\PrescriptionDelete.cshtml" />
+    <Content Include="Admin\Root.Master" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientPayment\Index.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientImages\PatientImagesCreate.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientImages\PatientImagesDelete.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientImages\PatientImagesDetails.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientImages\PatientImagesEdit.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientImages\patientImagesList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPayment\Index.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientStatus\PatientStatusList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\Prescription\PrescriptionAdd.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientManagement\PatientCreate.cshtml" />
+    <Content Include="Areas\SecretaryDashboard\Views\PatientStatus\PatientStatusList.cshtml" />
+    <Content Include="Appoiment\SecretaryMaster.Master" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPaymentReceipt\patientReceiptCreate.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPaymentReceipt\patientReceiptDetails.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPaymentReceipt\patientReceiptList.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPaymentReceipt\patientReceiptDelete.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\PatientPayment\DoctorClinecPaymnet.cshtml" />
+    <Content Include="Areas\DoctorDashboard\Views\CustomMatrial\getCustomMatrailPayment.cshtml" />
+    <None Include="Properties\PublishProfiles\Marc.pubxml" />
+    <Content Include="Main.Master" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Calendar\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\DoctorDashboard\Models\" />
+    <Folder Include="Areas\SecretaryDashboard\Models\" />
+    <Folder Include="Content\Images\PHOTO\large\" />
+    <Folder Include="Content\Images\PHOTO\medium\" />
+    <Folder Include="Content\Images\PHOTO\small\" />
+    <Folder Include="Content\Images\X-RAY\large\" />
+    <Folder Include="Content\Images\X-RAY\medium\" />
+    <Folder Include="Content\Images\X-RAY\small\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DentistManager.Domain\DentistManager.Domain.csproj">
+      <Project>{b2a7b0b8-878d-41a1-b816-c18f783db9c6}</Project>
+      <Name>DentistManager.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26412/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

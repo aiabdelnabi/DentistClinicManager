@@ -1,0 +1,10 @@
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\DentistManager.Domain.dll.config
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\DentistManager.Domain.dll
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\DentistManager.Domain.pdb
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\EntityFramework.dll
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\EntityFramework.xml
+E:\MVC\projects\DentistSoft\DentistManager.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\MVC\projects\DentistSoft\DentistManager.Domain\obj\Debug\DentistManager.Domain.csprojResolveAssemblyReference.cache
+E:\MVC\projects\DentistSoft\DentistManager.Domain\obj\Debug\DentistManager.Domain.dll
+E:\MVC\projects\DentistSoft\DentistManager.Domain\obj\Debug\DentistManager.Domain.pdb

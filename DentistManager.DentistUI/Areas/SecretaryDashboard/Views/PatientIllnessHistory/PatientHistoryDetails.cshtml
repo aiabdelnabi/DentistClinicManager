@@ -1,0 +1,31 @@
+﻿@model DentistManager.Domain.ViewModel.PatientHistoryViewModel
+
+@{
+    ViewBag.Title = "PatientHistoryDetails";
+}
+
+<div>
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripation)
+        </dd>
+
+    </dl>
+</div>
+<div class="bttomLink">
+    @Html.ActionLink("Edit", "PatientHistoryEdit", new { patientHistoryID = Model.HistoryID }) |
+    @Html.ActionLink("Back to List", "patientHistoryList", new { patientID = Model.PatientID })
+</div>

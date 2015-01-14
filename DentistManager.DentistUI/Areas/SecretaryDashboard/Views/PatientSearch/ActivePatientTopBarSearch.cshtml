@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "";
+}
+<div class="ActivePatientTopBarSearch">
+
+
+    @ViewBag.Msg
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="myForm">
+        <input type="text" class="myText" name="PatientID" placeholder="Patient ID" />
+        <input type="text" class="myText" name="mobileNumber" placeholder="Patient Mobile" />
+
+        <input type="submit" class="mybutton" value="Search" />
+    </div>
+    }
+</div>

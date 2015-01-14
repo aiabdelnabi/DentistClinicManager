@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DentistManager.Domain.ViewModel.MedicineMiniViewModel>
+@using DentistManager.DentistUI.HtmlHelpers
+
+@{
+    ViewBag.Title = "Prescription Add";
+}
+
+<h2>Prescription Create</h2>
+
+<input type="hidden" id="AppointmentID" value="@ViewBag.AppointmentID" />
+<input type="hidden" id="DoctorID" value="@ViewBag.DoctorID" />
+<input type="hidden" id="PatientID" value="@ViewBag.PatientID" />
+<input type="hidden" id="appointmentDate" value="@ViewBag.appointmentDate" />
+
+
+<div id="container"></div>
+
+
+
+<div id="prescHolder">
+    <table id="TreatmentList">
+        <tr>
+            <td> @Html.generatePatientMedicineDropDownList(Model)</td>
+            <td>Dose </td>
+            <td>ScaleType </td>
+            <td>Concentration </td>
+            <td><input type="button" id="btnAdd" name="btnAdd" value="Add" /></td>
+        </tr>
+    </table>
+</div>
+
+<input type="button" id="btnSavePresc" value="Save" />
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/DoctorDashboard/PrescriptionAdd.js")
+}
